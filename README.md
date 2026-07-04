@@ -27,16 +27,33 @@ https://github.com/akhilareddy3001/task-manager-by-akhila
 
 # 📸 Screenshots
 
-> *(Add screenshots after capturing them.)*
+## 🏠 Home Page
 
-| Home Page | Login Page |
-|------------|------------|
-| ![Home](screenshots/home.png) | ![Login](screenshots/login.png) |
+![Home](screenshots/home.png)
 
-| Register | Dashboard |
-|-----------|-----------|
-| ![Register](screenshots/register.png) | ![Dashboard](screenshots/tasks.png) |
+---
 
+## 🔐 Login Page
+
+![Login](screenshots/login.png)
+
+---
+
+## 📝 Register Page
+
+![Register](screenshots/register.png)
+
+---
+
+## 📋 Task Dashboard
+
+![Dashboard](screenshots/tasks.png)
+
+---
+
+## 🌙 Dark Mode
+
+![Dark Mode](screenshots/darkmode.png)
 ---
 
 # ✨ Features
