@@ -80,7 +80,7 @@ function Register() {
             </div>
 
             
-            <button onClick={handleRegister} disabled={loading}>
+            <button className="register-btn" onClick={handleRegister} disabled={loading}>
                 {loading ? "Registering..." : "Register"}
             </button>
             <p>
