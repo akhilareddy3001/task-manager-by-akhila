@@ -3,6 +3,7 @@ import API from "../api/api";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import "./Register.css";
+import taskIcon from "../assets/task-icon.png";
 
 function Register() {
     const [name, setName] = useState("");
@@ -35,12 +36,14 @@ function Register() {
     return (
     <div className="login-container">
         <div className="login-card">
-            <img
-            src="/task-icon.png"
-            alt="Task Manager"
-            className="logo"
-            />
-            <h1>Task Manager</h1>
+            <div className="logo-section">
+                <img
+                src={taskIcon}
+                alt="Task Manager"
+                className="logo"
+                />
+                <h1>Task Manager</h1>
+            </div>
             <h2>Create Account</h2>
 
             <input
