@@ -649,8 +649,6 @@ button:hover{
         min-height:130px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         box-sizing:border-box;
     }
     .card h2{
