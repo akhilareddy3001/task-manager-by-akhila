@@ -586,16 +586,21 @@ button:hover{
 @media (max-width:768px){
 
     .tasks-container{
-        width:95%;
+        width:90%;
+        max-width:900px;
         padding:18px;
         margin:18px auto;
+        box-sizing: border-box;
     }
 
     .dashboard-card{
+        width: 90%;
+        max-width:900px;
         background:white;
         border-radius:15px;
         padding:18px;
         margin:18px auto;
+        box-sizing: border-box;
     }
 
     .dashboard{
