@@ -588,8 +588,8 @@ button:hover{
 
     .tasks-container {
         width: 95%;
-        padding: 20px;
-        margin: 20px auto;
+        padding: 18px;
+        margin: 18px auto;
     }
 
     .page-header h1,
@@ -603,32 +603,54 @@ button:hover{
     }
 
     .input-section {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr 120px;
+        gap: 20px;
+        align-items:center;
     }
 
-    .input-section input,
-    .input-section button {
+    .input-section input{
         width: 100%;
+    }
+    .input-section button {
+        width: 120px;
+        height:48px;
     }
 
     .task-options {
-        flex-direction: column;
-        gap: 12px;
+        display:flex;
+        flex-wrap: nowrap;
+        gap: 8px;
+        overflow-x: auto;
+        padding-bottom: 5px;
+        
+    }
+    .task-options::-webkit-scrollbar{
+        display:none;
     }
 
     .task-options select,
     .task-options input[type="date"] {
-        width: 100%;
+        width: 130px;
+        min-width: 130px;
+        height: 42px;
     }
 
     .dashboard {
-        flex-direction: column;
-        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px
     }
 
     .card {
-        width: 90%;
-        max-width: 280px;
+        width: 100%;
+        padding:15px 10px;
+    }
+    .card h2{
+        font-size: 28px;
+    }
+    .card p{
+        font-size: 15px;
     }
 
     .filter-buttons {
@@ -659,23 +681,38 @@ button:hover{
     }
 
     .bottom-buttons {
-        flex-direction: column;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:12px;
+        
     }
 
     .clear-btn,
     .export-btn {
         width: 100%;
-        max-width: 250px;
+        
     }
 
     .theme-toggle {
         justify-content: center;
     }
+    .progress-section{
+        margin: 20px 0;
+    }
 
     .progress-section h3,
     .progress-section p {
         text-align: center;
+    }
+    .dashboard-card{
+        padding: 18px;
+        margin: 20px auto;
+    }
+    .dashboard-card h2{
+        font-size: 28px;
+    }
+    .dashboard-card p{
+        font-size: 15px;
     }
 }
 
