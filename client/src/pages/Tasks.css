@@ -638,19 +638,29 @@ button:hover{
 
     .dashboard {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px
+        grid-template-columns: repeat(2, minmax(140px 1fr));
+        gap: 12px;
+        margin-bottom: 20px;
     }
 
     .card {
         width: 100%;
-        padding:15px 10px;
+        padding:15px;
+        min-height:130px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing:border-box;
     }
     .card h2{
         font-size: 28px;
+        margin:8px 0;
+
     }
     .card p{
         font-size: 15px;
+        margin: 0;
     }
 
     .filter-buttons {
@@ -697,16 +707,22 @@ button:hover{
         justify-content: center;
     }
     .progress-section{
-        margin: 20px 0;
+        margin: 18px 0;
     }
 
-    .progress-section h3,
+    .progress-section h3{
+        margin-bottom: 10px;
+        text-align: center;
+    }
     .progress-section p {
         text-align: center;
     }
     .dashboard-card{
-        padding: 18px;
-        margin: 20px auto;
+        border-radius: 15px;
+        background: white;
+        padding:18px;
+        margin: 18px auto;
+        box-shadow:0 8px 20px rgba(0,0,0,.08)
     }
     .dashboard-card h2{
         font-size: 28px;
