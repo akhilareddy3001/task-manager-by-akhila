@@ -583,153 +583,137 @@ button:hover{
     }
 }
 
+@media (max-width:768px){
 
-@media (max-width: 768px) {
+    .tasks-container{
+        width:95%;
+        padding:18px;
+        margin:18px auto;
+    }
 
-    .tasks-container {
-        width: 95%;
-        padding: 18px;
-        margin: 18px auto;
+    .dashboard-card{
+        background:white;
+        border-radius:15px;
+        padding:18px;
+        margin:18px auto;
+    }
+
+    .dashboard{
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        gap:12px;
+        margin:20px 0;
+    }
+
+    .card{
+        width:100%;
+        min-height:120px;
+        padding:15px 10px;
+        box-sizing:border-box;
+
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .card h2{
+        font-size:28px;
+        margin:6px 0;
+    }
+
+    .card p{
+        font-size:14px;
+        margin:0;
+    }
+
+    .progress-section{
+        margin:18px 0;
     }
 
     .page-header h1,
-    .task-header h2 {
-        font-size: 28px;
+    .task-header h2{
+        font-size:28px;
     }
 
     .page-header p,
-    .task-header p {
-        font-size: 15px;
+    .task-header p{
+        font-size:15px;
     }
 
-    .input-section {
-        display: grid;
-        grid-template-columns: 1fr 120px;
-        gap: 20px;
+    .input-section{
+        display:grid;
+        grid-template-columns:1fr 110px;
+        gap:10px;
         align-items:center;
     }
 
     .input-section input{
-        width: 100%;
+        width:100%;
     }
-    .input-section button {
-        width: 120px;
+
+    .input-section button{
+        width:110px;
         height:48px;
     }
 
-    .task-options {
-        display:flex;
-        flex-wrap: nowrap;
-        gap: 8px;
-        overflow-x: auto;
-        padding-bottom: 5px;
-        
-    }
-    .task-options::-webkit-scrollbar{
-        display:none;
+    .task-options{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:10px;
     }
 
     .task-options select,
-    .task-options input[type="date"] {
-        width: 130px;
-        min-width: 130px;
-        height: 42px;
+    .task-options input[type="date"]{
+        width:100%;
+        min-width:0;
     }
 
-    .dashboard {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(140px 1fr));
-        gap: 12px;
-        margin-bottom: 20px;
+    .filter-buttons{
+        display:flex;
+        flex-wrap:wrap;
+        gap:8px;
     }
 
-    .card {
-        width: 100%;
-        padding:15px;
-        min-height:130px;
-        display: flex;
-        flex-direction: column;
-        box-sizing:border-box;
-    }
-    .card h2{
-        font-size: 28px;
-        margin:8px 0;
-
-    }
-    .card p{
-        font-size: 15px;
-        margin: 0;
+    .filter-buttons button{
+        flex:1;
+        min-width:90px;
     }
 
-    .filter-buttons {
-        flex-wrap: wrap;
-        gap: 10px;
+    .task-card{
+        padding:16px;
     }
 
-    .filter-buttons button {
-        flex: 1;
-        min-width: 100px;
+    .task-title{
+        font-size:18px;
     }
 
-    .task-card {
-        padding: 18px;
+    .task-buttons{
+        display:flex;
+        flex-direction:column;
+        gap:8px;
     }
 
-    .task-title {
-        font-size: 18px;
-        flex-wrap: wrap;
+    .task-buttons button{
+        width:100%;
     }
 
-    .task-buttons {
-        flex-direction: column;
+    .theme-toggle{
+        justify-content:center;
     }
 
-    .task-buttons button {
-        width: 100%;
-    }
-
-    .bottom-buttons {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    .bottom-buttons{
+        display:grid;
+        grid-template-columns:1fr 1fr;
         gap:12px;
-        
     }
 
     .clear-btn,
-    .export-btn {
-        width: 100%;
-        
+    .export-btn{
+        width:100%;
     }
 
-    .theme-toggle {
-        justify-content: center;
-    }
-    .progress-section{
-        margin: 18px 0;
-    }
-
-    .progress-section h3{
-        margin-bottom: 10px;
-        text-align: center;
-    }
-    .progress-section p {
-        text-align: center;
-    }
-    .dashboard-card{
-        border-radius: 15px;
-        background: white;
-        padding:18px;
-        margin: 18px auto;
-        box-shadow:0 8px 20px rgba(0,0,0,.08)
-    }
-    .dashboard-card h2{
-        font-size: 28px;
-    }
-    .dashboard-card p{
-        font-size: 15px;
-    }
 }
-
 
 
 @media (max-width: 480px) {
